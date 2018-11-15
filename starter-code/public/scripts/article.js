@@ -32,6 +32,7 @@ Article.prototype.toHtml = function() {
   this.body = marked(this.body);
 
   return template(this);
+  
 };
 
 Article.loadAll = rows => {
